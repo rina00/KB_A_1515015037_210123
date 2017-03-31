@@ -1,0 +1,21 @@
+DOMAINS   tipe data pada domain ini symbol karena predikat pada argumennya memiliki nilai berupa kumpulan karakter yang terdiri dari huruf atau kata tanpa dipisahkan
+					   oleh spasi
+orang                          = orang(nama,alamat)    //pada program ini hanya terdiri dari 2 section yaitu domains dan goal. p ada domain digunakan untuk mendeklarasikan objek yang diperlukan dalam
+							 suatu data. misal pada orang memiliki objek nama dan alamat. data nama mungkin diperlukan objek nama pertama dan kedua. dan nanti goalnya akan dibentuk 
+							 dengan urutan objek yang berada dalam data orang.							  
+nama                           = nama(pertama,kedua)   //pada nama terdapat nama pertama dan kedua.
+alamat                         = alamat(jalan,kota_kab,propinsi) //pada alamat ini juga terdapat objek jamak yang berisi tentang alamat jalan,kota,kabupaten dan propinsi  
+jalan                          = jalan(nama_jalan,nomor)  //terdapat objek jamak yang berisi namajalan dan nomor 
+kota_kab,propinsi,nama_jalan  = string   //domain ini bertipe data string karena kota,kabupaten,propinsi dan nama jalan ini berkarakter jamak yang berupa kata maupun kumpulan kata
+pertama,kedua                 = symbol   //
+nomor                          = integer //tipe data nya integer karena pada predikat pada argumennya memiliki nilai berupa bilangan bulat.
+
+GOAL  
+P1 = orang(nama(diena,fatihah),alamat(jalan("Wijaya Kusuma", 12), "Berbah", "DIY")),  											          
+P1 = orang(nama(_,fatihah),Alamat),   
+P2 = orang(nama(nur,fatihah),Alamat),   
+write("P1=",P1),nl,   
+write("P2=",P2),nl.
+// pada goal tersebut akan menampilkan data nama dan alamat yang berupa data nama menampilkan nama pertama dan kedua sedangkan data alamat akan menampilkan alamat jalan,kota,kab, dan propinsi beserta nomornya
+									 
+ 
